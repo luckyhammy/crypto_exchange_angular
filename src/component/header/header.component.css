@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272229;
+  max-width: 1200px;
+  width: 100%;
+  /* Matches the dark background color */
+  padding: 10px 50px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.log {
+  width: 1200px;
+}
+.logo img {
+  width: 100%;
+  /* Adjust this size based on the actual size of your logo */
+  height: auto;
+  padding-top: 15px;
+}
+
+.account-button {
+  border: 1px solid #e35760;
+  border-radius: 4px;
+  color: #e35760;
+  background-color: #28212b;
+  font-size: .8125rem;
+  height: 32px;
+  justify-content: center;
+  line-height: 1rem;
+  min-width: 115px;
+  opacity: 1;
+  padding: .4rem .5rem;
+  text-align: center;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+
+@media only screen and (max-width:1440px) {
+  .navbar {
+    max-width: 1024px;
+  }
+  .log {
+    .log {
+      width: 1024px;
+    }
+  }
+}

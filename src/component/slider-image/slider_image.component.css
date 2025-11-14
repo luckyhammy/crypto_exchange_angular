@@ -1,0 +1,35 @@
+
+
+.carousel {
+    padding-top: 50px;
+    overflow: hidden;
+    width: 100%;
+    /* Or any specific width */
+    /* background-color: #272229; */
+    /* To match the background */
+}
+
+.carousel-track {
+    display: flex;
+    gap: 60px;
+    width: calc(100% * 2);
+    /* Account for the doubled set of images */
+    animation: flow 100s linear infinite;
+}
+
+.carousel-track img {
+    width: auto;
+    height: 30px;
+    /* Adjust the height as necessary */
+}
+
+@keyframes flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Move the width of one set of images */
+    }
+}
